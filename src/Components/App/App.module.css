@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-inline: auto;
+    margin-inline: auto;
+    max-width: 400px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.containText{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    color: black;
+    background-color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.containText:hover {
+    animation: highlight 1s ease;
+}
+
+@keyframes highlight {
+    0% {
+        background-color: white;
+        transform: scale(1);
+    }
+    50% {
+        background-color: lightblue;
+        transform: scale(1.05);
+    }
+    100% {
+        background-color: white;
+        transform: scale(1);
+    }
+}

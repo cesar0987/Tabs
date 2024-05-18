@@ -1,0 +1,43 @@
+/* Animación de activación */
+@keyframes activateTab {
+    0% {
+        background-color: white;
+        transform: scale(1);
+    }
+    100% {
+        background-color: lightblue;
+        transform: scale(1.05);
+    }
+}
+
+
+.container{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+.activeTab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    animation-name: animationOne;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
